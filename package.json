@@ -1,0 +1,26 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "STORYBLOK_TOKEN=bRb5610UFzeXH0JFTQZQpwtt astro dev",
+    "start": "STORYBLOK_TOKEN=bRb5610UFzeXH0JFTQZQpwtt astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^2.0.2",
+    "@astrojs/vue": "^1.0.2",
+    "@storyblok/astro": "^1.1.0",
+    "@vitejs/plugin-basic-ssl": "^0.1.2",
+    "astro": "^1.3.1",
+    "axios": "^0.27.2",
+    "tailwindcss": "^3.0.24",
+    "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.7"
+  }
+}

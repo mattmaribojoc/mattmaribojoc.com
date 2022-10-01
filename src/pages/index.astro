@@ -1,0 +1,19 @@
+---
+import { useStoryblokApi, renderRichText } from '@storyblok/astro'
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import Layout from '../layouts/Layout.astro'
+
+console.log('here')
+const storyblokApi = useStoryblokApi()
+const { data } = await storyblokApi.get('cdn/stories/index', {
+  version: 'draft'
+})
+
+console.log(data)
+
+const story = data.story
+---
+
+<Layout title="Matt Maribojoc">
+  <StoryblokComponent blok={story.content} />
+</Layout>
