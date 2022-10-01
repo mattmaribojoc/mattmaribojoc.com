@@ -6,7 +6,5 @@ const { blok } = Astro.props
 
 <div {...storyblokEditable(blok)} class="prose prose-invert">
   <h1>{blok.title}</h1>
-  <article>
-    <Fragment set:html={renderRichText(blok.body)} />
-  </article>
+  <article set:html={renderRichText(blok.body)}></article>
 </div>

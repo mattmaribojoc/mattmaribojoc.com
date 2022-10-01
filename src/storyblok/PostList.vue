@@ -3,7 +3,7 @@ import { useStoryblokApi } from '@storyblok/astro'
 
 const storyblokApi = useStoryblokApi()
 const { data: posts } = await storyblokApi.get(
-  `cdn/stories?starts_with=blog/&excluding_fields=body`,
+  `cdn/stories?starts_with=blog/`,
   {
     version: 'draft'
   }
