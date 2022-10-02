@@ -1,5 +1,9 @@
 ---
+import { storyblokEditable } from '@storyblok/astro'
+
 import PostList from './PostList.vue'
+
+const { blok } = Astro.props
 ---
 
-<PostList />
+<PostList {...storyblokEditable(blok)} />
