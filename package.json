@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "STORYBLOK_TOKEN=bRb5610UFzeXH0JFTQZQpwtt astro dev",
-    "start": "STORYBLOK_TOKEN=bRb5610UFzeXH0JFTQZQpwtt astro dev",
+    "dev": "astro dev",
+    "start": " astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
