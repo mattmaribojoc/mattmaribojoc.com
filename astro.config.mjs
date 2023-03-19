@@ -3,7 +3,7 @@ import storyblok from '@storyblok/astro'
 import basicSsl from '@vitejs/plugin-basic-ssl'
 import vue from '@astrojs/vue'
 import tailwind from '@astrojs/tailwind' // https://astro.build/config
-import vercel from '@astrojs/vercel/edge'
+import vercel from '@astrojs/vercel/serverless'
 
 // https://astro.build/config
 export default defineConfig({
