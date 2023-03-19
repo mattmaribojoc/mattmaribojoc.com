@@ -2,12 +2,10 @@
 import { useStoryblokApi } from '@storyblok/astro'
 
 const storyblokApi = useStoryblokApi()
-const { data: posts } = await storyblokApi.get(
-  `cdn/stories?starts_with=blog/`,
-  {
-    version: 'draft'
-  }
-)
+const { data: posts } = await storyblokApi.get(`cdn/stories`, {
+  starts_with: 'blog/',
+  version: 'draft'
+})
 </script>
 
 <template>
