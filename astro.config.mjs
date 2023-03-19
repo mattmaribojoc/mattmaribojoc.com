@@ -13,8 +13,14 @@ export default defineConfig({
     storyblok({
       accessToken: 'bRb5610UFzeXH0JFTQZQpwtt',
       apiOptions: {
-        region: 'us'
+        region: 'us',
+        cache: {
+          clear: 'auto',
+          type: 'memory'
+        }
       },
+      useCustomApi: false,
+      bridge: true,
       components: {
         page: 'storyblok/Page',
         blogpost: 'storyblok/BlogPost',
