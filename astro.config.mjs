@@ -6,17 +6,12 @@ import tailwind from '@astrojs/tailwind' // https://astro.build/config
 import { loadEnv } from 'vite'
 
 import vercel from '@astrojs/vercel/serverless'
-const { PUBLIC_STORYBLOK_TOKEN } = loadEnv(
-  import.meta.env.MODE,
-  process.cwd(),
-  ''
-)
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
   integrations: [
     storyblok({
-      accessToken: PUBLIC_STORYBLOK_TOKEN,
+      accessToken: 'bRb5610UFzeXH0JFTQZQpwtt',
       apiOptions: {
         region: 'us'
       },
